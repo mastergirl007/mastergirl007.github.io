@@ -1,4 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老张百宝箱</title><link>https://mastergirl007.github.io</link><description>惟江上之清风</description><copyright>老张百宝箱</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://img.131213.xyz/file/d52e9da8daee856d42c8d.jpg</url><title>avatar</title><link>https://mastergirl007.github.io</link></image><lastBuildDate>Sat, 10 Aug 2024 18:24:20 +0000</lastBuildDate><managingEditor>老张百宝箱</managingEditor><ttl>60</ttl><webMaster>老张百宝箱</webMaster><item><title>使用GitHub pages 托管个人博客并使用cloudflare的免费cdn的优选域名加速</title><link>https://mastergirl007.github.io/post/shi-yong-GitHub%20pages%20-tuo-guan-ge-ren-bo-ke-bing-shi-yong-cloudflare-de-mian-fei-cdn-de-you-xuan-yu-ming-jia-su.html</link><description>&#13;
-![1719901769-2024_mkt_m7_banner](https://github.com/user-attachments/assets/75a4883f-cbba-4531-b3fb-d9eca4b8331c)&#13;
-使用GitHub pages 托管个人博客并使用cloudflare的免费cdn的优选域名加速。</description><guid isPermaLink="true">https://mastergirl007.github.io/post/shi-yong-GitHub%20pages%20-tuo-guan-ge-ren-bo-ke-bing-shi-yong-cloudflare-de-mian-fei-cdn-de-you-xuan-yu-ming-jia-su.html</guid><pubDate>Sat, 10 Aug 2024 17:32:38 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>老张百宝箱</title><link>https://mastergirl007.github.io</link><description>惟江上之清风</description><copyright>老张百宝箱</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://img.131213.xyz/file/d52e9da8daee856d42c8d.jpg</url><title>avatar</title><link>https://mastergirl007.github.io</link></image><lastBuildDate>Sun, 11 Aug 2024 18:53:47 +0000</lastBuildDate><managingEditor>老张百宝箱</managingEditor><ttl>60</ttl><webMaster>老张百宝箱</webMaster><item><title>使用GitHub pages 托管个人博客并使用cloudflare的免费cdn的优选域名加速</title><link>https://mastergirl007.github.io/post/shi-yong-GitHub%20pages%20-tuo-guan-ge-ren-bo-ke-bing-shi-yong-cloudflare-de-mian-fei-cdn-de-you-xuan-yu-ming-jia-su.html</link><description># 使用GitHub pages 托管个人博客并使用cloudflare的免费cdn的优选域名加速&#13;
+## 方法一&#13;
+cdn.主域名→（cname）→优选域名（cf网关）→（自定义主机名/回退源）→fallback.副域名→（cname）→gb.副域名→（A解析）→GitHub网关→（pages服务/自定义cdn.主域名）→仓库图片&#13;
+## 方法二&#13;
+cdn.主域名→（cname）→优选域名（cf网关）→（自定义主机名/回退源）→fallback.副域名→（cname）→GitHub_pages网址→（pages服务/自定义cdn.主域名）→仓库图片&#13;
+## 注意&#13;
+主域名不能托管在cloudflare，副域名要托管在cloudflare，如果都在，会出现1001错误&#13;
+自定义主机名/回退源的 根本逻辑是 如果有用户通过特定域名即“自定义主机名”访问了cf，那么cf就会将访问传递给“回退源”&#13;
+优选域名 cfip.cfcdn.vip 115155.xyz&#13;
+ps 使用GitHub托管的博客，如果直接传图片，是挂载在GitHub上的，几乎无法打开，需要使用国内第三方图床&#13;
+![1719901769-2024_mkt_m7_banner.png](https://p0.meituan.net/csc/b6d4c3210f889cc92c14496d31b124d4347279.png)&#13;
+。</description><guid isPermaLink="true">https://mastergirl007.github.io/post/shi-yong-GitHub%20pages%20-tuo-guan-ge-ren-bo-ke-bing-shi-yong-cloudflare-de-mian-fei-cdn-de-you-xuan-yu-ming-jia-su.html</guid><pubDate>Sat, 10 Aug 2024 17:32:38 +0000</pubDate></item></channel></rss>
