@@ -4,3 +4,4 @@
 3.win下完整命令
 .\reinstall.bat dd --img "https://oss.suntl.com/BLOG/Windows/Oracle_Win7_sp1_64_Administrator_nat.ee.gz"
 或者使用精简版https://file.1323123.xyz/dd/windows/natee/guajibao-win7-sp1-ent-x64-cn-efi.vhd.gz
+AWS使用的话，需要使用非efi版本https://file.1323123.xyz/dd/windows/natee/guajibao-win7-sp1-ent-x64-cn.vhd.gz
